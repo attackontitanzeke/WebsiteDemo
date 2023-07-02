@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="style12.css">
+</head>
+<body>
+    <form action="connect.php" method="post">
+        <div class="container">
+        <h1 class="main_heading">DocBox</h1>
+        <fieldset>
+        <legend><h2>Personal Details</h2></legend><br>
+        
+        <legend>Enter first name</legend>
+        <input type="text" name="fname" placeholder="First Name" value="fname"><br><br>
+        <legend>Enter last name</legend>
+        <input type="text" name="lname" placeholder="Last Name" value="lname"><br><br>
+
+        <legend id="gen">Gender</legend>
+        Male<input type="radio" name="gender" value="male">
+        Female <input type="radio" name="gender" value="female"> <br><br>
+
+        <legend>Address</legend>
+        <textarea name="ass" cols="30" rows="10" placeholder="Enter your address here.." value="ass"></textarea> <br><br>
+
+        <legend>Email</legend>
+        <input type="email" placeholder="Email" name="email" value="email"><br><br>
+
+        <legend>Pincode</legend>
+        <input type="number"  placeholder="123456" name="pincode" value="pincode">
+    </fieldset><br>
+    <fieldset>
+        <legend><h2>Payment</h2></legend>
+
+        <legend>Card Type</legend>
+        <select name="card" value="card" id="">
+            <option value="xx">[---Option---]</option>
+            <option value="visa">Visa</option>
+            <option value="mastercard">MasterCard</option>
+            <option value="rupy">Rupay</option>
+        </select><br><br>
+
+        <legend>Card Number</legend>
+        <input type="number" placeholder="xxxx-xxxx-xxxx-xxxx" value="cardNo" name="cardNo"><br><br>
+
+        <legend>Exp Date</legend>
+        <input type="date" placeholder="xx/xx" value="expDate" name="expDate"><br><br>
+        
+        <legend>CVV</legend>
+        <input type="password" placeholder="123" value="cvv" name="cvv"><br><br>
+
+        <button type="submit" id="butt" style="align-content: center;">Pay Now</button>
+
+    </fieldset>
+</div>
+    </form>
+</body>
+</html>
